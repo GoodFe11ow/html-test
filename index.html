@@ -1,28 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
     <header class="flex justify-between gap-8 mx-8 my-4 items-center">
-    <div class="flex gap-8 font-bold">
-        <h1 class="text-orange-400 text-2xl">T-pilet</h1>
-        <div class="flex gap-8 text-[18px] text-gray-400">
-            <a class="text-[18px] text-[#ff5000] hover:text-[#ff5000]" href="">Osta pilet</a>
-            <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href="">Soiduplaanid</a>
-            <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href="">Pileti tagasimine</a>
-            <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href="">Udised</a>
-            <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href="">Info</a>   
-
+      <img
+        class="h-12 w-24"
+        src="https://play-lh.googleusercontent.com/YaasJsy46v32r1uVm5NhpngbzuqvwTtwo6itm503ytqiS5MMACpNKaXSQmtMTJBY8ccq"
+        alt=""
+      />
+      <div class="flex gap-8 font-bold">
+        <a class="text-[18px] text-[#ff5000] hover:text-[#ff5000]" href=""
+          >Osta pilet</a
+        >
+        <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href=""
+          >Sõiduplaanid</a
+        >
+        <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href=""
+          >Pileti tagastamine</a
+        >
+        <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href=""
+          >Uudised</a
+        >
+        <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href=""
+          >Ärikliendileping</a
+        >
+        <a class="text-[18px] text-gray-400 hover:text-[#ff5000]" href=""
+          >Info</a
+        >
+      </div>
+      <div class="flex my-auto">
+        <div class="flex flex-col text-end border-r-2 border-gray-400 pr-8">
+          <a href="tel:+37255555555">1234</a>
+          <a href="mailto:info@pilet.ee">info@pilet.ee</a>
         </div>
-        <div class="flex my-auto">
-            <div class="flex flex-col text-end  ">
-
-            </div>
-
+        <div
+          class="flex gap-8 items-center mx-8 text-gray-400 text-xl font-semibold"
+        >
+          <p class="text-[#ff5000]">ET</p>
+          <p>EN</p>
+          <p>RU</p>
         </div>
+      </div>
+    </header>
+    <!-- body -->
+    <div
+      class="flex flex-col justify-center items-center h-screen gap-8 bg-cover bg-center bg-[url('https://webcms.tpilet.ee/static/taustapilt.jpg')]"
+    >
+      <h2 class="text-4xl">Osta bussipiletid</h2>
+      <div class="bg-white flex-col p-4">
+        <div class="flex justify-around text-2xl font-semibold my-4 gap-8">
+          <p class="text-[#ff5000] border-b-2 border-[#ff5000]">Üks suund</p>
+          <p>Mõlemad suundad</p>
+        </div>
+        <div class="flex flex-col space-y-4 mt-6">
+          <input type="text" placeholder="Lähtepeatus" class=" border-b-2 border-b-gray-200 py-3 px-6 pr-48 focus:outline-none">
+          <input type="text" placeholder="Sihtpeatus" class=" border-b-2 border-b-gray-200 py-3 px-6 pr-48 focus:outline-none">
+          <input class="border-b-2 border-b-gray py-3 px-6" type="date" name="" id="" value="2024-10-18" />
+        </div>
+        <div>
+          <button class=" mx-28 bg-[#ff5000] h-16 w-40 rounded-md mt-8 text-white font-semibold text-[17px] tracking-wider">OTSI REISE</button>
+        </div>
+        <div>
+          <h2 class="mx-24 mt-8 font-semibold tracking-widest">POPULARSED SUUNAD</h2>
+        </div>
+        <div class="flex flex-row justify-around">
+          <div class="w-40">
+            <a href="" class="text-gray-400 hover:text-black">Tallin>Tartu</a><br>
+            <a href="" class="text-gray-400 hover:text-black">Tallin>Pärnu</a><br>
+            <a href="" class="text-gray-400 hover:text-black">Tallin>Narva</a><br>
+            <a href="" class="text-gray-400 hover:text-black">Tallin>Viljandi</a>          
+          </div>
+          <div class="w-40 text-right">
+            <a href="" class="text-gray-400 hover:text-black">Tartu>Tallin</a><br>
+            <a href="" class="text-gray-400 hover:text-black">Pärnu>Tallin</a><br>
+            <a href="" class="text-gray-400 hover:text-black">Narva>Tallin</a><br>
+            <a href="" class="text-gray-400 hover:text-black">Viljandi>Tallin</a>  
+          </div>
+        </div>  
+        
+      </div>
+      <footer class="w-full flex justify-between items-center p-4 min-h-[80px]">
+        <p  class=" flex flex-row">
+          <img src="https://webcms.tpilet.ee/static/Tpilet-usaldusvaarne-ettevote-2024.png">
+          <img src="https://webcms.tpilet.ee/static/Tpilet-gasellfirma-2024.png">
+        </p>
+      </footer>  
     </div>
-</body>
+  </body>
 </html>
